@@ -1,0 +1,41 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2014-08-30 22:06:00 #1 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' is opened by 24151@Thomas-MacBook-Pro.local
+
+[2014-08-30 22:06:01 #2 type] 
+Type raspi.identities.PositionWrapper is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2014-08-30 22:08:41 #1 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' has been recovered (tr. 1-4)
+
+[2014-08-30 22:08:41 #2 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' is opened by 24157@Thomas-MacBook-Pro.local
+
+[2014-08-30 22:08:41 #3 type] 
+Type raspi.identities.PositionWrapper is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2014-08-30 22:09:23 #1 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' has been recovered (tr. 6-6)
+
+[2014-08-30 22:09:23 #2 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' is opened by 24161@Thomas-MacBook-Pro.local
+
+[2014-08-30 22:09:23 #3 type] 
+Type raspi.identities.PositionWrapper is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2014-08-30 22:10:56 #1 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' has been recovered (tr. 8-8)
+
+[2014-08-30 22:10:56 #2 store] 
+Database '/Users/thomasverbeke/Code/Project/ttrex_raspi/track.odb' is opened by 24164@Thomas-MacBook-Pro.local
+
+[2014-08-30 22:10:56 #3 type] 
+Type raspi.identities.PositionWrapper is not enhanced.
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Groups>
+	<group id="0">
+		<groupName>Industria</groupName>
+		<startLatitude>50.87529760219</startLatitude>
+		<startLongitude>4.7078025341034</startLongitude>
+	</group>
+	<group id="1">
+		<groupName>Apoloon</groupName>
+		<startLatitude>50.874796619023</startLatitude>
+		<startLongitude>4.7099107503891</startLongitude>
+	</group>
+	<group id="2">
+	<groupName>KLA</groupName>
+	<startLatitude>50.874400567708</startLatitude>
+	<startLongitude>4.7080332040787</startLongitude>
+	</group>
+</Groups>
