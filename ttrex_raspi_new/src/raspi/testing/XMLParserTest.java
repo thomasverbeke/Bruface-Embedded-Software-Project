@@ -22,7 +22,7 @@ public class XMLParserTest {
 	private Map<Integer,RunStick> result ;
 
 	@Test
-	public void test() {
+	public void testPositionXMLParser() {
 		File xmlFile = new File("/Users/thomasverbeke/Code/Project/ttrex_raspi/data/configure.xml");
 		PositionXMLParser parser = new PositionXMLParser(xmlFile);
 		

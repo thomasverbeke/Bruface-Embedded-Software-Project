@@ -19,7 +19,7 @@ public class TrackTest {
 	Track track = new Track();
 	/** Update track & store in database & check **/
 	@Test
-	public void updateTrack() {	
+	public void testUpdateTrack() {	
 		//first we update track; store it in database
 		track.clearTrack();
 		List<TtrexPosition> trackList = new ArrayList<TtrexPosition>();
@@ -51,7 +51,7 @@ public class TrackTest {
 	
 	/** Simulates incoming position data from GPS for 1 runner**/
 	@Test
-	public void HandlePositionEvent() {	
+	public void testHandlePositionEvent() {	
 		//define a stick, with starting position
 		//feed it a few frames
 		//check overall output
@@ -83,14 +83,11 @@ public class TrackTest {
 	}
 	
 	/** Test all possible scenarios for matching a GPS location to a track point**/
+	
 	@Test
-	public void getClosestTrackPoint() {	
+	public void TestGetClosestTrackPoint_Valid(){
 		TtrexPosition result;
-		
-		//test when track is empty
 		track.clearTrack();
-		result = track.getClosestTrackPoint(new TtrexPosition(4.707834720611572,50.874498734587384),new TtrexPosition(4.707373380661011,50.874850779625284));
-		assertNull(result);
 
 		//now add track (distance between track points is arround 50m)
 		List<TtrexPosition> trackList = new ArrayList<TtrexPosition>();
@@ -123,6 +120,17 @@ public class TrackTest {
 
 		//should return lastposition
 		assertEquals(result,new TtrexPosition(4.7073894739151,  50.87480000406278));
-
 	}
+	
+	@Test
+	public void TestGetClosestTrackPoint_EmptyTrack() {	
+		TtrexPosition result;
+		
+		//test when track is empty
+		track.clearTrack();
+		result = track.getClosestTrackPoint(new TtrexPosition(4.707834720611572,50.874498734587384),new TtrexPosition(4.707373380661011,50.874850779625284));
+		assertNull(result);
+	}
+	
+	
 }

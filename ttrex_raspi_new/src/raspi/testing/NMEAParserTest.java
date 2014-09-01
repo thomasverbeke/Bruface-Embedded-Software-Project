@@ -33,7 +33,7 @@ public class NMEAParserTest {
 	
 	
 	@Test
-	public void test() {
+	public void TestNMEAParser() {
 		
 		/** SETUP **/
 		
