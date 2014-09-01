@@ -26,7 +26,7 @@ public class FileCommunicator implements Runnable {
 	public FileCommunicator() throws FileNotFoundException {
 	
 		//File is hard-coded on disk
-		file = new File("/Users/thomasverbeke/Code/Project/ttrex_raspi/data.data");
+		file = new File("/Users/thomasverbeke/Code/Project/ttrex_raspi/data/raw.data");
 		
 		//Try to open the stream
 		try {

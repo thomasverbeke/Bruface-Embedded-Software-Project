@@ -48,6 +48,8 @@ public class RunStick {
     	this.startPosition = startPosition;
     	this.id = id ;
     	this.numRounds = 0;
+    	this.lastPosition.setLat(0);
+    	this.lastPosition.setLong(0);
     	
     	
     }

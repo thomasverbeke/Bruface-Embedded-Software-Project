@@ -38,6 +38,7 @@ public class Track implements PositionObserver {
     
     private WebCommunicator webComm;
     private boolean webStatus;
+    private int counter;
     
     /**
      * Constructor for the Track
@@ -58,12 +59,17 @@ public class Track implements PositionObserver {
     	System.out.println("RunSticks initiated from configure.xml");
     	webStatus=false;
     	trackDescriptor = loadTrackDb(1);
+    	counter=0;
         
     }
     
+    public int getCounter(){
+    	return counter;
+    }
     public RunStick getRunnerStick(int id){
     	return runnerStickMap.get(id);
     }
+    
     
     public void addRunnerStick(RunStick stick){
     	runnerStickMap.put(stick.getId(), stick);
@@ -289,6 +295,8 @@ public class Track implements PositionObserver {
     		//Send an event to the webserver
     		TrackEvent event = new TrackEvent(runnerId,pos_track.getPercentage(),pos.getLong(),pos.getLat(),pos.getSpeed());
     		event.setRounds(stick.getNumRounds());
+    		
+    		counter++;
     		if (webStatus==true){
     			webComm.sendFrame(event);
     		}
